@@ -1,6 +1,6 @@
 {
   "name": "mersion",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Retry Mongoose saves that suffer from conflicts via VersionErrors",
   "main": "index.js",
   "scripts": {
