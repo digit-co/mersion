@@ -1,0 +1,43 @@
+{
+  "name": "mersion",
+  "version": "0.0.0",
+  "description": "Retry Mongoose saves that suffer from conflicts via VersionErrors",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "standard",
+    "test": "mocha"
+  },
+  "author": "Sean Lavine",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "mongoose": "^5.2.9",
+    "standard": "^11.0.1"
+  },
+  "peerDependencies": {
+    "mongoose": ">= 3"
+  },
+  "dependencies": {
+    "debug": "^3.1.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hellodigit/mersion.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hellodigit/mersion/issues"
+  },
+  "homepage": "https://github.com/hellodigit/mersion#readme",
+  "keywords": [
+    "mongoose",
+    "version",
+    "VersionError",
+    "save",
+    "save",
+    "conflict",
+    "retry"
+  ]
+}
