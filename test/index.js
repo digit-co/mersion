@@ -26,7 +26,7 @@ describe('Mersion', function () {
 
   describe('normal save of existing document', function () {
     before(async function () {
-      const book = new Book({title: 'book1'})
+      const book = new Book({ title: 'book1' })
       this.book = await book.save()
     })
 
@@ -67,8 +67,8 @@ describe('Mersion', function () {
 
   describe('conflicting save', function () {
     before(async function () {
-      this.book3 = await new Book({title: 'book3'}).save()
-      this.book4 = await new Book({title: 'book4'}).save()
+      this.book3 = await new Book({ title: 'book3' }).save()
+      this.book4 = await new Book({ title: 'book4' }).save()
     })
 
     it('save without mversion should cause VersionError', async function () {
@@ -92,10 +92,10 @@ describe('Mersion', function () {
 
   describe('max retries is reached', function () {
     before(async function () {
-      this.book5 = await new Book({title: 'book5'}).save()
+      this.book5 = await new Book({ title: 'book5' }).save()
     })
     it('error should be returned', async function () {
-      const mersion = await doSaveWithConflict(this.book5, true, {retries: -1})
+      const mersion = await doSaveWithConflict(this.book5, true, { retries: -1 })
       let errThrown
       try {
         await mersion.save()
