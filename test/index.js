@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 'use strict'
 
-const assert = require('assert')
+const assert = require('assert').strict
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 const VersionError = mongoose.Error.VersionError
